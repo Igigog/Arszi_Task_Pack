@@ -1,0 +1,54 @@
+TYP = igi_subtask.TARGET_TYPES.INSTANT
+TARGET_NAME = "kill"
+PATTERN = "basic"
+
+local function distance(position_1, position_2)
+	local x = math.abs(position_1.x - position_2.x)
+    local z = math.abs(position_1.z - position_2.z)
+	return x*x + z*z
+end
+
+function is_complete(obj_data)
+	local MAX_DISTANCE = 2500
+	local position_of_target = igi_helper.alife_obj(obj_data.id).position
+    local position_of_player = db.actor:position()
+	return distance(position_of_target, position_of_player) < MAX_DISTANCE
+end
+
+function quest_target(obj_data, CACHE)
+	local priority = 1000
+	local target_id
+	for _, subtask_data in pairs(CACHE.subtasks) do
+		if subtask_data.target == "scout_arszi" then
+			if (subtask_data.priority or 20) < priority then
+				target_id = subtask_data.id
+				priority = subtask_data.priority
+			end
+		end
+	end
+	return target_id
+end
+
+function setup_smart(smart_info, factions)
+	local actor_level = level.name()
+	local scout_paths = igi_db.SectionView.new("arszi\\scout_routes.ltx", actor_level):as_table()
+	local path = scout_paths["path_"..math.random(#scout_paths)]
+	
+	local smart_data = igi_models.create_SmartData(path)
+	local group_data = igi_models.create_GroupData(
+			smart_data,
+			smart_info.target,
+			smart_info.amount
+	)
+	local desc = igi_models.create_DescriptionData(nil, nil, path[1])
+	return group_data, desc
+end
+
+function create_smart(group_data)
+	local smarts = igi_target_basic.create_smart(group_data)
+	for k, smart_data in pairs(smarts) do
+		local priority = string.match(k, "smart_.*_(.*)")
+		smart_data.priority = priority
+	end
+	return smarts
+end

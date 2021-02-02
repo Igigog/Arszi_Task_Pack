@@ -1,0 +1,16 @@
+{
+	"preconditions": {
+	},
+	"disabled":false,
+	"setup": [
+
+	{
+	"entity_type":"item",
+	"target":"fetch",
+	"item_type":"arszi_parts_trophy_common",
+	"amount":[5,10],
+	"where":"anywhere",
+	},
+
+	],
+}

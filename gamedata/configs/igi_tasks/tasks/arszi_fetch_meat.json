@@ -1,0 +1,16 @@
+{
+	"preconditions": {
+	},
+	"disabled":false,
+	"setup": [
+
+	{
+	"entity_type":"item",
+	"target":"fetch",
+	"item_type":"arszi_meat_basic",
+	"amount":[5,10],
+	"where":"anywhere",
+	},
+
+	],
+}

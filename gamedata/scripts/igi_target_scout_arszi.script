@@ -40,7 +40,10 @@ function setup_smart(smart_info, factions)
 			smart_info.target,
 			smart_info.amount
 	)
-	local desc = igi_models.create_DescriptionData(nil, nil, path[1])
+	
+	local smart = SIMBOARD.smarts_by_names[path[1]]
+	local level_name = alife():level_name(game_graph():vertex(smart.m_game_vertex_id):level_id())
+	local desc = igi_models.create_DescriptionData(nil, nil, level_name)
 	return group_data, desc
 end
 

@@ -1,15 +1,15 @@
 ;============================================================
-;
-;	Anomaly 1.5.1
-;	Igigog
-;   Last change: 02/02/2021, 17:04:25 UTC
+; 
+;    Anomaly 1.5.1 
+;    Igigog 
+;    Last change: 03/28/2021, 12:42:28 UTC 
 ;
 ;============================================================
-
 ;============================================================
-;                           COLD 
+;          {'Cold', 'Leader', 'Marsh', 'ClearSky'} 
 ;        mar_smart_terrain_base_stalker_leader_marsh
 ;============================================================
+
 [mar_smart_terrain_base_stalker_leader_marsh_task_arszi_scout]
 icon                  = ui_inGame2_Put_v_pripyat
 storyline             = false
@@ -30,4 +30,4 @@ on_job_descr          = %=igi_task_generic_setup(mar_smart_terrain_base_stalker_
 on_complete           = %=igi_task_generic_finish(mar_smart_terrain_base_stalker_leader_marsh_task_arszi_scout:true)%
 on_fail               = %=igi_task_generic_finish(mar_smart_terrain_base_stalker_leader_marsh_task_arszi_scout:false))%
 condlist_0            = {!task_giver_alive(mar_smart_terrain_base_stalker_leader_marsh_task_arszi_scout)} fail
-;------------------------------------------------
+

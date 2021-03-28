@@ -7,7 +7,7 @@
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"item_type":"arszi_parts_chimera",
+	"section":"&TableValueRandom(arszi_parts_chimera)&",
 	"amount":1,
 	"where":"anywhere",
 	},

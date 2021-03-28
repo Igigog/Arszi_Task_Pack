@@ -1,58 +1,14 @@
 ;============================================================
-;
-;	Anomaly 1.5.1
-;	Igigog
-;   Last change: 02/02/2021, 17:04:25 UTC
+; 
+;    Anomaly 1.5.1 
+;    Igigog 
+;    Last change: 03/28/2021, 12:42:28 UTC 
 ;
 ;============================================================
-
 ;============================================================
-;                          BUTCHER 
+;         {'Hunter', 'Butcher', 'Loner', 'Garbage'} 
 ;                     hunter_gar_trader
 ;============================================================
-[hunter_gar_trader_task_arszi_fetch_trophy]
-icon                  = ui_inGame2_Trophy
-storyline             = false
-prior                 = 2000
-repeat_timeout        = 16200
-precondition          = {=validate_generic_task(hunter_gar_trader_task_arszi_fetch_trophy)} true, false
-
-title_functor         = igi_task_generic_text
-descr_functor         = igi_task_generic_text
-job_descr             = igi_task_text_hunter_gar_trader_task_arszi_fetch_trophy_job_descr
-task_complete_descr   = igi_task_text_hunter_gar_trader_task_arszi_fetch_trophy_finish
-
-stage_complete        = 2
-status_functor        = igi_task_generic_status
-target_functor        = igi_task_generic_target
-on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fetch_trophy)%
-
-on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_trophy:true)%
-on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_trophy:false))%
-condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_trophy)} fail
-;------------------------------------------------
-
-[hunter_gar_trader_task_arszi_fetch_hide]
-icon                  = ui_inGame2_Pelt
-storyline             = false
-prior                 = 2000
-repeat_timeout        = 16200
-precondition          = {=validate_generic_task(hunter_gar_trader_task_arszi_fetch_hide)} true, false
-
-title_functor         = igi_task_generic_text
-descr_functor         = igi_task_generic_text
-job_descr             = igi_task_text_hunter_gar_trader_task_arszi_fetch_hide_job_descr
-task_complete_descr   = igi_task_text_hunter_gar_trader_task_arszi_fetch_hide_finish
-
-stage_complete        = 2
-status_functor        = igi_task_generic_status
-target_functor        = igi_task_generic_target
-on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fetch_hide)%
-
-on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_hide:true)%
-on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_hide:false))%
-condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_hide)} fail
-;------------------------------------------------
 
 [hunter_gar_trader_task_arszi_fetch_psy_dog_fur]
 icon                  = ui_inGame2_Nochnaya_ohota
@@ -74,29 +30,29 @@ on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fe
 on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_psy_dog_fur:true)%
 on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_psy_dog_fur:false))%
 condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_psy_dog_fur)} fail
-;------------------------------------------------
 
-[hunter_gar_trader_task_arszi_fetch_beak]
-icon                  = ui_inGame2_Crow
+
+[hunter_gar_trader_task_arszi_fetch_hide]
+icon                  = ui_inGame2_Pelt
 storyline             = false
 prior                 = 2000
 repeat_timeout        = 16200
-precondition          = {=validate_generic_task(hunter_gar_trader_task_arszi_fetch_beak)} true, false
+precondition          = {=validate_generic_task(hunter_gar_trader_task_arszi_fetch_hide)} true, false
 
 title_functor         = igi_task_generic_text
 descr_functor         = igi_task_generic_text
-job_descr             = igi_task_text_hunter_gar_trader_task_arszi_fetch_beak_job_descr
-task_complete_descr   = igi_task_text_hunter_gar_trader_task_arszi_fetch_beak_finish
+job_descr             = igi_task_text_hunter_gar_trader_task_arszi_fetch_hide_job_descr
+task_complete_descr   = igi_task_text_hunter_gar_trader_task_arszi_fetch_hide_finish
 
 stage_complete        = 2
 status_functor        = igi_task_generic_status
 target_functor        = igi_task_generic_target
-on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fetch_beak)%
+on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fetch_hide)%
 
-on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_beak:true)%
-on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_beak:false))%
-condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_beak)} fail
-;------------------------------------------------
+on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_hide:true)%
+on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_hide:false))%
+condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_hide)} fail
+
 
 [hunter_gar_trader_task_arszi_fetch_bloodsucker]
 icon                  = ui_inGame2_Bloodsucker1
@@ -118,7 +74,7 @@ on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fe
 on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_bloodsucker:true)%
 on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_bloodsucker:false))%
 condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_bloodsucker)} fail
-;------------------------------------------------
+
 
 [hunter_gar_trader_task_arszi_fetch_chimera]
 icon                  = ui_inGame2_PD_Ohotnik_na_mutantov
@@ -140,4 +96,48 @@ on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fe
 on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_chimera:true)%
 on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_chimera:false))%
 condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_chimera)} fail
-;------------------------------------------------
+
+
+[hunter_gar_trader_task_arszi_fetch_trophy]
+icon                  = ui_inGame2_Trophy
+storyline             = false
+prior                 = 2000
+repeat_timeout        = 16200
+precondition          = {=validate_generic_task(hunter_gar_trader_task_arszi_fetch_trophy)} true, false
+
+title_functor         = igi_task_generic_text
+descr_functor         = igi_task_generic_text
+job_descr             = igi_task_text_hunter_gar_trader_task_arszi_fetch_trophy_job_descr
+task_complete_descr   = igi_task_text_hunter_gar_trader_task_arszi_fetch_trophy_finish
+
+stage_complete        = 2
+status_functor        = igi_task_generic_status
+target_functor        = igi_task_generic_target
+on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fetch_trophy)%
+
+on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_trophy:true)%
+on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_trophy:false))%
+condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_trophy)} fail
+
+
+[hunter_gar_trader_task_arszi_fetch_beak]
+icon                  = ui_inGame2_Crow
+storyline             = false
+prior                 = 2000
+repeat_timeout        = 16200
+precondition          = {=validate_generic_task(hunter_gar_trader_task_arszi_fetch_beak)} true, false
+
+title_functor         = igi_task_generic_text
+descr_functor         = igi_task_generic_text
+job_descr             = igi_task_text_hunter_gar_trader_task_arszi_fetch_beak_job_descr
+task_complete_descr   = igi_task_text_hunter_gar_trader_task_arszi_fetch_beak_finish
+
+stage_complete        = 2
+status_functor        = igi_task_generic_status
+target_functor        = igi_task_generic_target
+on_job_descr          = %=igi_task_generic_setup(hunter_gar_trader_task_arszi_fetch_beak)%
+
+on_complete           = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_beak:true)%
+on_fail               = %=igi_task_generic_finish(hunter_gar_trader_task_arszi_fetch_beak:false))%
+condlist_0            = {!task_giver_alive(hunter_gar_trader_task_arszi_fetch_beak)} fail
+

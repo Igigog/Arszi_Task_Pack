@@ -7,7 +7,7 @@
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"item_type":"arszi_parts_specimen_monster_rare",
+	"item_type":"&TableValueRandom(arszi_parts_specimen_monster_rare)&",
 	"amount":1,
 	"where":"anywhere",
 	},

@@ -7,7 +7,7 @@
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"item_type":"arszi_hides_common",
+	"section":"&TableValueRandom(arszi_hides_common)&",
 	"amount":1,
 	"where":"anywhere",
 	},

@@ -31,7 +31,7 @@ end
 
 function setup_smart(smart_info, factions)
 	local actor_level = level.name()
-	local scout_paths = igi_db.SectionView.new("arszi\\scout_routes.ltx", actor_level):as_table()
+	local scout_paths = igi_db.SectionView("arszi\\scout_routes.ltx", actor_level):as_table()
 	local path = scout_paths["path_"..math.random(#scout_paths)]
 	
 	local smart_data = igi_models.create_SmartData(path)
@@ -54,4 +54,12 @@ function create_smart(group_data)
 		smart_data.priority = priority
 	end
 	return smarts
+end
+
+function get_money_reward(entity)
+	return 300
+end
+
+function get_goodwill_reward(entity)
+	return 10
 end

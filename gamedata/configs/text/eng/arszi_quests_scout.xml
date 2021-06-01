@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
+	<string id="igi_task_text_arszi_scout_title">
+		<text>Scout</text>
+	</string>
 <!-- Cold -->
 <!-- mar_smart_terrain_base_stalker_leader_marsh_task_arszi_scout -->
 	<string id="igi_task_text_mar_smart_terrain_base_stalker_leader_marsh_task_arszi_scout_title">

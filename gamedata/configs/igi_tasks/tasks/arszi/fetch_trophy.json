@@ -7,8 +7,8 @@
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"section":"&TableValueRandom(arszi_parts_specimen_monster_common)&",
-	"amount":[5,10],
+	"section":"&TableValueRandom(arszi_parts_trophy_common)&",
+	"amount":"&Random(5,10)&",
 	"where":"anywhere",
 	},
 

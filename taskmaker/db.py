@@ -235,7 +235,7 @@ quests = {
     "arszi_scout": [
         {"Leader", "Agroprom", "Army"},
         {"Trader", "Bar", "Duty"},
-        {"Trader", "DeadCity", "Mercenary"},
+        {"Leader", "DeadCity", "Mercenary"},
         {"Leader", "ClearSky", "Marsh"},
         {"Leader", "Freedom", "AW"},
         {"Trader", "Monolith", "Pripyat2"},

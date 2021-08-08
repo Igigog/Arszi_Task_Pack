@@ -9,8 +9,8 @@
 	"target":"fetch",
 	"section":"&TableValueRandom(arszi_parts_trophy_common)&",
 	"amount":"&Random(5,10)&",
-	"where":"anywhere",
-	},
+	"where":"anywhere"
+	}
 
-	],
+	]
 }

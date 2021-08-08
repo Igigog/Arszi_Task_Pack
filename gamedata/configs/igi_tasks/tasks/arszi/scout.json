@@ -4,8 +4,8 @@
 	"disabled":false,
 	"setup": [
 		{
-		"entity_type":"smart",
-		"target":"scout_arszi",
-		},
-	],
+		"entity_type":"location",
+		"target":"scout_arszi"
+		}
+	]
 }

@@ -8,9 +8,8 @@
 	"entity_type":"item",
 	"target":"fetch",
 	"section":"hide_psy_dog",
-	"amount":1,
-	"where":"anywhere",
-	},
+	"where":"anywhere"
+	}
 
-	],
+	]
 }

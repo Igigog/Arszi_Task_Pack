@@ -8,9 +8,7 @@
 	"entity_type":"item",
 	"target":"fetch",
 	"section":"mutant_part_crow_beak",
-	"amount":1,
-	"where":"anywhere",
-	},
-
-	],
+	"where":"anywhere"
+	}
+	]
 }

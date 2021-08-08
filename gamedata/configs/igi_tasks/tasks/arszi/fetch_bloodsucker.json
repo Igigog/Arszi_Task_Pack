@@ -8,9 +8,8 @@
 	"entity_type":"item",
 	"target":"fetch",
 	"section":"mutant_part_krovosos_jaw",
-	"amount":1,
-	"where":"anywhere",
-	},
+	"where":"anywhere"
+	}
 
-	],
+	]
 }

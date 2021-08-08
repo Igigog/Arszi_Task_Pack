@@ -8,9 +8,8 @@
 	"entity_type":"item",
 	"target":"fetch",
 	"section":"&TableValueRandom(arszi_hides_common)&",
-	"amount":1,
-	"where":"anywhere",
-	},
+	"where":"anywhere"
+	}
 
-	],
+	]
 }

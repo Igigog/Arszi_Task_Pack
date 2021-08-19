@@ -33,6 +33,9 @@ function setup_location(smart_info, factions)
 	local actor_level = level.name()
 	local scout_paths = igi_db.SectionView("arszi\\scout_routes.ltx", actor_level):as_table()
 	local path = scout_paths["path_"..math.random(#scout_paths)]
+	for i, name in pairs(path) do
+		path[i] = SIMBOARD.smarts_by_names[name].id
+	end
 	
 	local smart_data = igi_models.create_SmartData(path)
 	local group_data = igi_models.create_GroupData(
@@ -41,7 +44,7 @@ function setup_location(smart_info, factions)
 			smart_info.amount
 	)
 	
-	local smart = SIMBOARD.smarts_by_names[path[1]]
+	local smart = SIMBOARD.smarts[path[1]].smrt
 	local level_name = alife():level_name(game_graph():vertex(smart.m_game_vertex_id):level_id())
 	local desc = igi_models.create_DescriptionData(nil, nil, level_name)
 	return group_data, desc
@@ -50,7 +53,7 @@ end
 function create_location(group_data)
 	local smarts = igi_target_basic.create_location(group_data)
 	for k, smart_data in pairs(smarts) do
-		local priority = string.match(k, "smart_.*_(.*)")
+		local priority = string.match(k, "$[^_]*_.*_(.*)$")
 		smart_data.priority = priority
 	end
 	return smarts

@@ -2,6 +2,8 @@ TYP = igi_subtask.TARGET_TYPES.INSTANT
 TARGET_NAME = "kill"
 PATTERN = "basic"
 
+local trace_dbg = igi_helper.trace_dbg
+
 local function distance(position_1, position_2)
 	local x = math.abs(position_1.x - position_2.x)
     local z = math.abs(position_1.z - position_2.z)
@@ -17,7 +19,7 @@ end
 
 function quest_target(obj_data, CACHE)
 	local priority = 1000
-	local target_id
+	local target_id = obj_data.id
 	for _, subtask_data in pairs(CACHE.subtasks) do
 		if subtask_data.target == "scout_arszi" then
 			if (subtask_data.priority or 20) < priority then
@@ -53,8 +55,8 @@ end
 function create_location(group_data)
 	local smarts = igi_target_basic.create_location(group_data)
 	for k, smart_data in pairs(smarts) do
-		local priority = string.match(k, "$[^_]*_.*_(.*)$")
-		smart_data.priority = priority
+		local priority = string.match(k, "%$[^_]*_[^_]*_([^_]*)%$")
+		smart_data.priority = tonumber(priority)
 	end
 	return smarts
 end

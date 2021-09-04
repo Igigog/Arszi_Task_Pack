@@ -61,10 +61,10 @@ function create_location(group_data)
 	return smarts
 end
 
-function get_money_reward(entity)
+function get_success_money(entity)
 	return 300
 end
 
-function get_goodwill_reward(entity)
+function get_success_goodwill(entity)
 	return 10
 end

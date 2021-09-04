@@ -239,6 +239,7 @@ quests = {
         {"Leader", "ClearSky", "Marsh"},
         {"Leader", "Freedom", "AW"},
         {"Trader", "Monolith", "Pripyat2"},
+        {"Fanatic"},
     ],
     fs(["Butcher"]): [
         "arszi_fetch_trophy",

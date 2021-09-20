@@ -1,35 +1,5 @@
-TYP = igi_subtask.TARGET_TYPES.INSTANT
-TARGET_NAME = "kill"
-PATTERN = "basic"
-
-local trace_dbg = igi_helper.trace_dbg
-
-local function distance(position_1, position_2)
-	local x = math.abs(position_1.x - position_2.x)
-    local z = math.abs(position_1.z - position_2.z)
-	return x*x + z*z
-end
-
-function is_complete(obj_data)
-	local MAX_DISTANCE = 2500
-	local position_of_target = igi_helper.alife_obj(obj_data.id).position
-    local position_of_player = db.actor:position()
-	return distance(position_of_target, position_of_player) < MAX_DISTANCE
-end
-
-function quest_target(obj_data, CACHE)
-	local priority = 1000
-	local target_id = obj_data.id
-	for _, subtask_data in pairs(CACHE.subtasks) do
-		if subtask_data.target == "scout_arszi" then
-			if (subtask_data.priority or 20) < priority then
-				target_id = subtask_data.id
-				priority = subtask_data.priority
-			end
-		end
-	end
-	return target_id
-end
+TARGET_NAME = "scout_arszi"
+PATTERN = "visit"
 
 function setup_location(smart_info, factions)
 	local actor_level = level.name()
@@ -50,21 +20,4 @@ function setup_location(smart_info, factions)
 	local level_name = alife():level_name(game_graph():vertex(smart.m_game_vertex_id):level_id())
 	local desc = igi_models.create_DescriptionData(nil, nil, level_name)
 	return group_data, desc
-end
-
-function create_location(group_data)
-	local smarts = igi_target_basic.create_location(group_data)
-	for k, smart_data in pairs(smarts) do
-		local priority = string.match(k, "%$[^_]*_[^_]*_([^_]*)%$")
-		smart_data.priority = tonumber(priority)
-	end
-	return smarts
-end
-
-function get_success_money(entity)
-	return 300
-end
-
-function get_success_goodwill(entity)
-	return 10
 end

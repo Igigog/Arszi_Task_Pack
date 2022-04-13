@@ -2,12 +2,12 @@
 	"preconditions": {
 	},
 	"disabled":false,
-	"setup": [
+	"entities": [
 
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"section":"mutant_part_zombi_hand",
+	"section_name":"mutant_part_zombi_hand",
 	"amount":3,
 	"where":"anywhere"
 	}

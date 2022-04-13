@@ -2,12 +2,12 @@
 	"preconditions": {
 	},
 	"disabled":false,
-	"setup": [
+	"entities": [
 
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"section":"mutant_part_krovosos_jaw",
+	"section_name":"mutant_part_krovosos_jaw",
 	"where":"anywhere"
 	}
 

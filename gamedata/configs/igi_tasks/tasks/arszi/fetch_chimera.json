@@ -2,12 +2,12 @@
 	"preconditions": {
 	},
 	"disabled":false,
-	"setup": [
+	"entities": [
 
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"section":"&TableValueRandom(arszi_parts_chimera)&",
+	"section_name":"&TableValueRandom(arszi_parts_chimera)&",
 	"where":"anywhere"
 	}
 

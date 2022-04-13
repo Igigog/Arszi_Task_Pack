@@ -2,12 +2,12 @@
 	"preconditions": {
 	},
 	"disabled":false,
-	"setup": [
+	"entities": [
 
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"section":"mutant_part_crow_beak",
+	"section_name":"mutant_part_crow_beak",
 	"where":"anywhere"
 	}
 	]

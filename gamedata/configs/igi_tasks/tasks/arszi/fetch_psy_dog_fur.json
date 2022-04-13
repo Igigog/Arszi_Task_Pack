@@ -2,12 +2,12 @@
 	"preconditions": {
 	},
 	"disabled":false,
-	"setup": [
+	"entities": [
 
 	{
 	"entity_type":"item",
 	"target":"fetch",
-	"section":"hide_psy_dog",
+	"section_name":"hide_psy_dog",
 	"where":"anywhere"
 	}
 

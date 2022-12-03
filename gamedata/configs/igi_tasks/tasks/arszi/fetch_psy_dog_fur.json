@@ -1,15 +1,14 @@
 {
-	"preconditions": {
-	},
-	"disabled":false,
 	"entities": [
-
 	{
-	"entity_type":"item",
-	"target":"fetch",
-	"section_name":"hide_psy_dog",
-	"where":"anywhere"
+		"entity_type":"item",
+		"target":"fetch",
+		"section_name":"hide_psy_dog",
+		"where":"anywhere"
 	}
-
-	]
+	],
+	"quest_givers": [
+		{"Butcher": true}
+	],
+	"icon": "ui_inGame2_Nochnaya_ohota"
 }

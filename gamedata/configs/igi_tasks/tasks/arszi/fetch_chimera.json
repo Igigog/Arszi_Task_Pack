@@ -1,15 +1,14 @@
 {
-	"preconditions": {
-	},
-	"disabled":false,
 	"entities": [
-
 	{
-	"entity_type":"item",
-	"target":"fetch",
-	"section_name":"&TableValueRandom(arszi_parts_chimera)&",
-	"where":"anywhere"
+		"entity_type":"item",
+		"target":"fetch",
+		"section_name":"&TableValueRandom(arszi_parts_chimera)&",
+		"where":"anywhere"
 	}
-
-	]
+	],
+	"quest_givers": [
+		{"Butcher": true}
+	],
+	"icon": "ui_inGame2_PD_Ohotnik_na_mutantov"
 }

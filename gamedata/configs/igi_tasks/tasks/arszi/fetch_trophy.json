@@ -1,16 +1,16 @@
 {
-	"preconditions": {
-	},
-	"disabled":false,
 	"entities": [
-
 	{
-	"entity_type":"item",
-	"target":"fetch",
-	"section_name":"&TableValueRandom(arszi_parts_trophy_common)&",
-	"amount":"&Random(5,10)&",
-	"where":"anywhere"
+		"entity_type":"item",
+		"target":"fetch",
+		"section_name":"&TableValueRandom(arszi_parts_trophy_common)&",
+		"amount":"&Random(5,10)&",
+		"where":"anywhere"
 	}
 
-	]
+	],
+	"quest_givers": [
+		{"Butcher": true}
+	],
+	"icon": "ui_inGame2_Trophy"
 }

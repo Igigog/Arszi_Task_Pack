@@ -1,16 +1,16 @@
 {
-	"preconditions": {
-	},
-	"disabled":false,
 	"entities": [
-
 	{
-	"entity_type":"item",
-	"target":"fetch",
-	"section_name":"mutant_part_zombi_hand",
-	"amount":3,
-	"where":"anywhere"
+		"entity_type":"item",
+		"target":"fetch",
+		"section_name":"mutant_part_zombi_hand",
+		"amount":3,
+		"where":"anywhere"
 	}
 
-	]
+	],
+	"quest_givers": [
+		{"Leader": true, "Ecolog": true}
+	],
+	"icon": "ui_inGame2_Zombie"
 }

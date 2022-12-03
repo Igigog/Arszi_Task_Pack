@@ -1,13 +1,20 @@
 {
-	"preconditions": {
-	},
-	"disabled":false,
 	"entities": [
-		{
+	{
 		"entity_type":"location",
 		"target":"visit",
 		"curr_level":"&Constant(player_level)&",
 		"path":"&TableValueRandom(arszi_scout_$this.curr_level$)&"
-		}
-	]
+	}
+	],
+	"quest_givers": [
+		{"Leader": true, "Agroprom": true, "Army": true},
+        {"Trader": true, "Bar": true, "Duty": true},
+        {"Leader": true, "DeadCity": true, "Mercenary": true},
+        {"Leader": true, "ClearSky": true, "Marsh": true},
+        {"Leader": true, "Freedom": true, "AW": true},
+        {"Trader": true, "Monolith": true, "Pripyat2": true},
+        {"Fanatic": true}
+	],
+	"icon": "ui_inGame2_Put_v_pripyat"
 }

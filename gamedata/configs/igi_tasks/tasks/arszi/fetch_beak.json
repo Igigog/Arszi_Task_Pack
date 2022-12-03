@@ -1,14 +1,14 @@
 {
-	"preconditions": {
-	},
-	"disabled":false,
 	"entities": [
-
 	{
-	"entity_type":"item",
-	"target":"fetch",
-	"section_name":"mutant_part_crow_beak",
-	"where":"anywhere"
+		"entity_type":"item",
+		"target":"fetch",
+		"section_name":"mutant_part_crow_beak",
+		"where":"anywhere"
 	}
-	]
+	],
+	"quest_givers": [
+		{"Butcher": true}
+	],
+	"icon": "ui_inGame2_Crow"
 }

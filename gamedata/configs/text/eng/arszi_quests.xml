@@ -37,7 +37,7 @@
 	<string id="igi_task_text_arszi_fetch_psy_dog_fur_finish">
 		<text>Do you have it? Yes! One of the finest pelts I have ever seen in my life. Here is your payment, hunter, and something else, which I found in the days around and have not much use for.</text>
 	</string>
-	<!-- hunter_gar_trader_task_arszi_fetch_beak -->
+	<!-- hunter_gar_trader_arszi_fetch_beak -->
 	<string id="igi_task_text_arszi_fetch_beak_title">
 		<text>Legends of the Zone - Find a mutated crow beak for Butcher</text>
 	</string>

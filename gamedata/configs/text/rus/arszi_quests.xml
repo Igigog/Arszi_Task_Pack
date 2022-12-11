@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <string_table>
 <!-- Butcher -->
-<!-- hunter_gar_trader_task_common_trophy -->
+<!-- hunter_gar_trader_common_trophy -->
 	<string id="igi_task_text_arszi_fetch_trophy_title">
 		<text>Найти обычные части мутантов</text>
 	</string>
@@ -14,7 +14,7 @@
 	<string id="igi_task_text_arszi_fetch_trophy_finish">
 		<text>Ты принес отличные материалы. Молодец, охотник.</text>
 	</string>
-<!-- hunter_gar_trader_task_common_hide -->
+<!-- hunter_gar_trader_common_hide -->
 	<string id="igi_task_text_arszi_fetch_hide_title">
 		<text>Найти обычные шкуры мутантов</text>
 	</string>
@@ -27,7 +27,7 @@
 	<string id="igi_task_text_arszi_fetch_hide_finish">
 		<text>Видишь, снимать шкуру с мутантов не так уж и сложно, да, охотник?</text>
 	</string>
-	<!-- hunter_gar_trader_task_psy_dog_fur -->
+	<!-- hunter_gar_trader_psy_dog_fur -->
 	<string id="igi_task_text_arszi_fetch_psy_dog_fur_title">
 		<text>Лучшая шкура - найти шкуру пси-собаки</text>
 	</string>
@@ -40,7 +40,7 @@
 	<string id="igi_task_text_arszi_fetch_psy_dog_fur_finish">
 		<text>Она у тебя есть? Да! Одна из лучших шкур, которые я когда-либо видел в своей жизни. Вот твоя плата, охотник, и еще кое-что, что я нашел в свое время и не очень-то мне пригодилось.</text>
 	</string>
-	<!-- hunter_gar_trader_task_arszi_fetch_beak -->
+	<!-- hunter_gar_trader_arszi_fetch_beak -->
 	<string id="igi_task_text_arszi_fetch_beak_title">
 		<text>Легенды Зоны - Найти мутировавший клюв вороны для Мясника</text>
 	</string>
@@ -53,7 +53,7 @@
 	<string id="igi_task_text_arszi_fetch_beak_finish">
 		<text>Так это и есть тот легендарный клюв. Действительно, он выглядит по-другому. Вот твоя плата, охотник.</text>
 	</string>
-	<!-- hunter_gar_trader_task_bloodsucker -->
+	<!-- hunter_gar_trader_bloodsucker -->
 	<string id="igi_task_text_arszi_fetch_bloodsucker_title">
 		<text>Изысканные украшения</text>
 	</string>
@@ -66,7 +66,7 @@
 	<string id="igi_task_text_arszi_fetch_bloodsucker_finish">
 		<text>Отлично! Надеюсь, они не попробовали тебя во время охоты. Вот твоя плата, охотник.</text>
 	</string>
-	<!-- hunter_gar_trader_task_chimera -->
+	<!-- hunter_gar_trader_chimera -->
 	<string id="igi_task_text_arszi_fetch_chimera_title">
 		<text>Лучший охотник</text>
 	</string>
@@ -80,7 +80,7 @@
 		<text>Самый лучший трофей, который ты мне принес! Вот твоя награда, мастер-охотник, и еще кое-что из моих старых запасов, что мне не очень-то пригодилось. Ты это заслужил!</text>
 	</string>
 <!-- Fanatic -->
-<!-- esc_2_12_stalker_fanat_task_meat -->
+<!-- esc_2_12_stalker_fanat_meat -->
 	<string id="igi_task_text_arszi_fetch_meat_title">
 		<text>Еда для новичков</text>
 	</string>
@@ -94,7 +94,7 @@
 		<text>Зпасибо, друг, вот твоя плата за помошь!</text>
 	</string>
 <!-- Wolf -->
-<!-- esc_2_12_stalker_wolf_task_night -->
+<!-- esc_2_12_stalker_wolf_night -->
 	<string id="igi_task_text_night_title">
 		<text>Ночной террор на Кордоне - Уничтожить мутантов.</text>
 	</string>
@@ -108,7 +108,7 @@
 		<text>Спасибо за твою тяжелую работу, Деревня Новичков пока в безопасности ... Вот твоя награда.</text>
 	</string>
 <!-- Sakharov -->
-<!-- yan_stalker_sakharov_task_mutant_parts_specimen_monster_common -->
+<!-- yan_stalker_sakharov_mutant_parts_specimen_monster_common -->
 	<string id="igi_task_text_arszi_fetch_monster_common_title">
 		<text>Сбор образцов мутантов</text>
 	</string>
@@ -121,7 +121,7 @@
 	<string id="igi_task_text_arszi_fetch_monster_common_finish">
 		<text>Спасибо, молодой человек! Вот ваша награда.</text>
 	</string>
-<!-- yan_stalker_sakharov_task_mutant_parts_specimen_zombie -->
+<!-- yan_stalker_sakharov_mutant_parts_specimen_zombie -->
 	<string id="igi_task_text_arszi_fetch_zombie_title">
 		<text>Сбор образцов зомбированных гуманоидов</text>
 	</string>
@@ -134,7 +134,7 @@
 	<string id="igi_task_text_arszi_fetch_zombie_finish">
 		<text>Это действительно печально, закончить так... О да, вот ваша награда.</text>
 	</string>
-<!-- yan_stalker_sakharov_task_mutant_parts_specimen_humanoid -->
+<!-- yan_stalker_sakharov_mutant_parts_specimen_humanoid -->
 	<string id="igi_task_text_arszi_fetch_humanoid_title">
 		<text>Сбор гуманоидных образцов</text>
 	</string>
@@ -147,7 +147,7 @@
 	<string id="igi_task_text_arszi_fetch_humanoid_finish">
 		<text>Очаровательно! Эти образцы могли бы открыть дверь для науки за гранью воображения. Ваша награда, как и было обещано!</text>
 	</string>
-<!-- yan_stalker_sakharov_task_mutant_parts_specimen_mutant_rare -->
+<!-- yan_stalker_sakharov_mutant_parts_specimen_mutant_rare -->
 	<string id="igi_task_text_arszi_fetch_monster_rare_title">
 		<text>Сбор редких образцов мутантов</text>
 	</string>

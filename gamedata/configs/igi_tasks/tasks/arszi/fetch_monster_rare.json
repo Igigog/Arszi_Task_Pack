@@ -3,7 +3,7 @@
 	{
 		"entity_type":"item",
 		"target":"fetch",
-		"section_name":"&TableValueRandom(arszi_parts_specimen_monster_rare)&",
+		"section_name":"&TableValueRandom('arszi_parts_specimen_monster_rare')&",
 		"where":"anywhere"
 	}
 	],

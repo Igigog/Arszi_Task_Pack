@@ -4,7 +4,7 @@
 		"entity_type":"item",
 		"target":"fetch",
 		"section_name":"&igi_macros.TableValueRandom('arszi_parts_trophy_common')&",
-		"amount":"&igi_macros.Random(5,10)&",
+		"amount":"&igi_random.rand(5,10)&",
 		"where":"anywhere"
 	}
 

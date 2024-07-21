@@ -3,8 +3,8 @@
 	{
 		"entity_type":"item",
 		"target":"fetch",
-		"section_name":"&TableValueRandom('arszi_meat_basic')&",
-		"amount":"&Random(5,10)&",
+		"section_name":"&igi_macros.TableValueRandom('arszi_meat_basic')&",
+		"amount":"&igi_macros.Random(5,10)&",
 		"where":"anywhere"
 	}
 	],

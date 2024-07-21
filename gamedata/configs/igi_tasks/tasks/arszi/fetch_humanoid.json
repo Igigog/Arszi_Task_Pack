@@ -3,7 +3,7 @@
 	{
 		"entity_type":"item",
 		"target":"fetch",
-		"section_name":"&TableValueRandom('arszi_parts_specimen_humanoid')&",
+		"section_name":"&igi_macros.TableValueRandom('arszi_parts_specimen_humanoid')&",
 		"where":"anywhere"
 	}
 	],

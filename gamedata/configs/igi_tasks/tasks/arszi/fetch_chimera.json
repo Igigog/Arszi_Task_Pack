@@ -3,7 +3,7 @@
 	{
 		"entity_type":"item",
 		"target":"fetch",
-		"section_name":"&TableValueRandom('arszi_parts_chimera')&",
+		"section_name":"&igi_macros.TableValueRandom('arszi_parts_chimera')&",
 		"where":"anywhere"
 	}
 	],

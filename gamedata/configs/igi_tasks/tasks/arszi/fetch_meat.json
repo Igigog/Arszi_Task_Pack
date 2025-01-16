@@ -1,11 +1,9 @@
 {
 	"entities": [
 	{
-		"entity_type":"item",
 		"target":"fetch",
 		"section_name":"&igi_macros.TableValueRandom('arszi_meat_basic')&",
-		"amount":"&igi_random.rand(5,10)&",
-		"where":"anywhere"
+		"amount":"&igi_random.rand(5,10)&"
 	}
 	],
 	"quest_givers": [

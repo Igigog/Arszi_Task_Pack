@@ -1,11 +1,9 @@
 {
 	"entities": [
 	{
-		"entity_type":"item",
 		"target":"fetch",
 		"section_name":"mutant_part_zombi_hand",
-		"amount":3,
-		"where":"anywhere"
+		"amount":3
 	}
 
 	],

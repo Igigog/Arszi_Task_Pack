@@ -1,10 +1,8 @@
 {
 	"entities": [
 	{
-		"entity_type":"item",
 		"target":"fetch",
-		"section_name":"&igi_macros.TableValueRandom('arszi_hides_common')&",
-		"where":"anywhere"
+		"section_name":"&igi_macros.TableValueRandom('arszi_hides_common')&"
 	}
 	],
 	"quest_givers": [

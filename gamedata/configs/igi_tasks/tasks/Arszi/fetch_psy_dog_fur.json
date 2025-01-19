@@ -1,7 +1,7 @@
 {
 	"entities": [
 	{
-		"target":"fetch",
+		"CONTROLLER":"igi_target_fetch.Fetch",
 		"section_name":"hide_psy_dog"
 	}
 	],

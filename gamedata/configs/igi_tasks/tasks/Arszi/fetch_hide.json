@@ -1,0 +1,12 @@
+{
+	"entities": [
+	{
+		"CONTROLLER":"igi_target_fetch.Fetch",
+		"section_name":"$ igi_macros.TableValueRandom('arszi_hides_common')"
+	}
+	],
+	"quest_givers": [
+		{"Butcher": true}
+	],
+	"icon": "ui_inGame2_Pelt"
+}

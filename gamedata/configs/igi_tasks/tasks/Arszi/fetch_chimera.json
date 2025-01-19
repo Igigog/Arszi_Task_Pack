@@ -1,8 +1,8 @@
 {
 	"entities": [
 	{
-		"target":"fetch",
-		"section_name":"&igi_macros.TableValueRandom('arszi_parts_chimera')&"
+		"CONTROLLER":"igi_target_fetch.Fetch",
+		"section_name":"$ igi_macros.TableValueRandom('arszi_parts_chimera')"
 	}
 	],
 	"quest_givers": [

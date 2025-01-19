@@ -1,4 +1,5 @@
 {
+	"WTF_VERSION": "4.0",
 	"entities": [
 	{
 		"CONTROLLER":"igi_target_fetch.Fetch",

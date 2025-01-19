@@ -3,7 +3,8 @@
 	"entities": [
 	{
 		"CONTROLLER":"igi_target_fetch.Fetch",
-		"section_name":"mutant_part_crow_beak"
+		"section_name":"mutant_part_crow_beak",
+		"to_description": true
 	}
 	],
 	"quest_givers": [

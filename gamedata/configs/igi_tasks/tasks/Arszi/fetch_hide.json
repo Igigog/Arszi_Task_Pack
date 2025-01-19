@@ -3,7 +3,8 @@
 	"entities": [
 	{
 		"CONTROLLER":"igi_target_fetch.Fetch",
-		"section_name":"$ igi_macros.TableValueRandom('arszi_hides_common')"
+		"section_name":"$ igi_utils.random_table_key(igi_helper.db_ini:collect_section('arszi_hides_common'))",
+		"to_description": true
 	}
 	],
 	"quest_givers": [

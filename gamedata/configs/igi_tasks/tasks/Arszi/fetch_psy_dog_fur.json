@@ -3,7 +3,8 @@
 	"entities": [
 	{
 		"CONTROLLER":"igi_target_fetch.Fetch",
-		"section_name":"hide_psy_dog"
+		"section_name":"hide_psy_dog",
+		"to_description": true
 	}
 	],
 	"quest_givers": [

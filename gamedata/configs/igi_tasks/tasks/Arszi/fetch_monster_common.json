@@ -3,8 +3,9 @@
 	"entities": [
 	{
 		"CONTROLLER":"igi_target_fetch.Fetch",
-		"section_name":"$ igi_macros.TableValueRandom('arszi_parts_specimen_monster_common')",
-		"amount":"$ igi_random.rand(5,10)"
+		"section_name":"$ igi_utils.random_table_key(igi_helper.db_ini:collect_section('arszi_parts_specimen_monster_common'))",
+		"amount":"$ igi_random.rand(5,10)",
+		"to_description": true
 	}
 	],
 	"quest_givers": [

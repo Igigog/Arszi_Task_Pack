@@ -4,7 +4,8 @@
 	{
 		"CONTROLLER":"igi_target_fetch.Fetch",
 		"section_name":"mutant_part_zombi_hand",
-		"amount":3
+		"amount":3,
+		"to_description": true
 	}
 
 	],

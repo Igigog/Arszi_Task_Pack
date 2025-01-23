@@ -2,7 +2,7 @@
 	"WTF_VERSION": "4.0",
 	"entities": [
 	{
-		"CONTROLLER":"igi_target_fetch.Fetch",
+		"CONTROLLER":"@$ igi_target_fetch.Fetch",
 		"section_name":"$ igi_utils.random_table_key(igi_helper.db_ini:collect_section('arszi_parts_specimen_monster_rare'))",
 		"to_description": true
 	}

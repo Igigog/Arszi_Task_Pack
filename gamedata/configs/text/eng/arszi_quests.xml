@@ -18,6 +18,9 @@
 	<string id="igi_task_text_arszi_fetch_hide_name">
 		<text>Find common mutant hides and pelts</text>
 	</string>
+	<string id="igi_task_text_arszi_fetch_hide_text">
+		<text>Butcher has asked me to bring him some common hides and pelts</text>
+	</string>
     <string id="igi_task_text_arszi_fetch_hide_about">
 		<text>The weather is growing colder and colder ... Mutants in the Zone have learned how to survive the hazards of the local weather by growing warm fur. It is time to gather some pelts! Also, pelts are not just for keeping you warm, but they have many utilities like repairing weary armour or giving you an edge against anomalies! Gather some hides for me, and you will be rewarded.</text>
 	</string>

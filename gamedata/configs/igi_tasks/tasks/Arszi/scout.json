@@ -1,14 +1,17 @@
 {
-	"WTF_VERSION": "4.0",
+	"WTF_VERSION": "4.2",
 	"CREDITS": "Arszi - idea and initial implementation\\nIgigog - support",
 	"entities": [
 	{
 		"CONTROLLER":"@$ igi_target_visit.Visit",
+		"GEN": "@$ igi_generate.Split('path', 'name')",
+
 		"curr_level":"$ level.name()",
 		"path":"$ parse_names(|this.path_string|)",
 		"path_string": "$ igi_utils.random_table_value(igi_helper.db_ini:collect_section('arszi_scout_' .. |this.curr_level|))",
-		"GEN": "@$ igi_generate.Split('path', 'name')",
 		"id": "$ igi_helper.smart_by_name(|this.name|).id",
+
+		"subtask": true,
 		"to_description": true
 	}
 	],

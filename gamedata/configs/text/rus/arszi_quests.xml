@@ -29,16 +29,16 @@
 	</string>
 
 	<!-- fetch_butcher -->
-	<string id="igi_task_text_arszi_fetch_trophy_name">
+	<string id="igi_task_text_arszi_fetch_butcher_name">
 		<text>Найти части мутантов</text>
 	</string>
-    <string id="igi_task_text_arszi_fetch_trophy_text">
+    <string id="igi_task_text_arszi_fetch_butcher_text">
 		<text>Мясник попросил меня принести части мутантов</text>
 	</string>
-    <string id="igi_task_text_arszi_fetch_trophy_about">
+    <string id="igi_task_text_arszi_fetch_butcher_about">
 		<text>Мясо - не единственная часть мутантов, которая может быть ценной. Некоторые сталкеры ценят определенные части мутантов как трофеи или талисманы удачи. Ну, например, красивое ожерелье из клыков псевдодога или пушистый кошачий хвост, свисающий с пояса. Любой может выследить мутанта и носить его части как символ достижения, но для создания исключительно эффектных предметов требуется настоящее мастерство! - Принеси мне несколько трофеев, и я сделаю из них несколько стильных аксессуаров. Ты в деле?</text>
 	</string>
-	<string id="igi_task_text_arszi_fetch_trophy_finish">
+	<string id="igi_task_text_arszi_fetch_butcher_finish">
 		<text>Ты принес отличные материалы. Молодец, охотник.</text>
 	</string>
 </string_table>

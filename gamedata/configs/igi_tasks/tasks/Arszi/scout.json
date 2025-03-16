@@ -4,12 +4,12 @@
 	"entities": [
 	{
 		"CONTROLLER":"@$ igi_target_visit.Visit",
-		"GEN": "@$ igi_generate.Split('path', 'name')",
+		"GEN": "@$ igi_generate.Split('ids', 'id')",
 
 		"curr_level":"$ level.name()",
 		"path":"$ parse_names(|this.path_string|)",
 		"path_string": "$ igi_utils.random_table_value(igi_helper.db_ini:collect_section('arszi_scout_' .. |this.curr_level|))",
-		"id": "$ igi_helper.smart_by_name(|this.name|).id",
+		"ids": "$ wtf.map(|this.path|, function(n) return SIMBOARD.smarts_by_names[n].id end)",
 
 		"subtask": true,
 		"to_description": true

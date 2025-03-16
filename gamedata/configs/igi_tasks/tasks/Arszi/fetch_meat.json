@@ -4,13 +4,14 @@
 	"entities": [
 	{
 		"CONTROLLER":"@$ igi_target_fetch.Fetch",
-		"section_name":"$ igi_utils.random_table_key(igi_helper.db_ini:collect_section('arszi_meat_basic'))",
-		"amount":"$ igi_random.rand(5,10)",
+		"section_name":"$ igi_utils.random_table_key(igi_helper.db_ini:collect_section('arszi_meat'))",
+		"amount":"$ igi_random.rand(6,12)",
 		"to_description": true
 	}
 	],
 	"quest_givers": [
-		{"Butcher": true}
+		{"Fanatic": true}
 	],
-	"icon": "ui_inGame2_Pripasi"
+	"rewarder": "@$ igi_rewards.Static({money = 2880, goodwill = 6})",
+	"icon": "ui_inGame2_Crow"
 }

@@ -4,12 +4,14 @@
 	"entities": [
 	{
 		"CONTROLLER":"@$ igi_target_fetch.Fetch",
-		"section_name":"hide_psy_dog",
+		"section_name":"$ igi_utils.random_table_key(igi_helper.db_ini:collect_section('arszi_butcher'))",
+		"amount":"$ igi_random.rand(3,12)",
 		"to_description": true
 	}
 	],
 	"quest_givers": [
 		{"Butcher": true}
 	],
-	"icon": "ui_inGame2_Nochnaya_ohota"
+	"rewarder": "@$ igi_rewards.Static({money = 1550, goodwill = 6})",
+	"icon": "ui_inGame2_Crow"
 }

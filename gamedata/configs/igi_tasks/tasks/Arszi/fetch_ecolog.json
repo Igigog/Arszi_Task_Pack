@@ -12,6 +12,5 @@
 	"quest_givers": [
 		{"Sakharov": true}
 	],
-	"rewarder": "@$ igi_rewards.Static({money = 4850, goodwill = 3})",
 	"icon": "ui_inGame2_Specimen_Controller"
 }

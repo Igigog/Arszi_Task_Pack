@@ -12,6 +12,5 @@
 	"quest_givers": [
 		{"Butcher": true}
 	],
-	"rewarder": "@$ igi_rewards.Static({money = 1550, goodwill = 6})",
 	"icon": "ui_inGame2_Crow"
 }

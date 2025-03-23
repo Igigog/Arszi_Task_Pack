@@ -16,7 +16,7 @@
 
 	<!-- fetch_ecolog -->
 	<string id="igi_task_text_arszi_fetch_ecolog_name">
-		<text>Collect and gather samples for scientific studies</text>
+		<text>Sample collection</text>
 	</string>
     <string id="igi_task_text_arszi_fetch_ecolog_text">
 		<text>Sakharov has asked me to bring him samples for his studies</text>

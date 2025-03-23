@@ -16,7 +16,7 @@
 
 	<!-- fetch_ecolog -->
 	<string id="igi_task_text_arszi_fetch_ecolog_name">
-		<text>Соберите образцы для научных исследований</text>
+		<text>Сбор образцов</text>
 	</string>
     <string id="igi_task_text_arszi_fetch_ecolog_text">
 		<text>Сахаров просил меня принести ему образцы для исследований</text>
